@@ -1,0 +1,23 @@
+{{summaryPlaceholder}}
+
+{{#parametersExist}}
+Args:
+{{#args}}
+    {{var}}: {{descriptionPlaceholder}}
+{{/args}}
+{{#kwargs}}
+    {{var}}: {{descriptionPlaceholder}}. По умолчанию {{&default}}.
+{{/kwargs}}
+{{/parametersExist}}
+{{#exceptionsExist}}
+
+Raises:
+{{#exceptions}}
+    {{type}}: {{descriptionPlaceholder}}
+{{/exceptions}}
+{{/exceptionsExist}}
+{{#returnsExist}}
+
+Returns:
+    {{descriptionPlaceholder}}
+{{/returnsExist}}
